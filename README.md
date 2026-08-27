@@ -17,7 +17,7 @@ reference. Look for [brackets].
 - [etc.]
 
 ## Participate
-- https://github.com/explainers-by-googlers/[your-repository-name]/issues
+- https://github.com/explainers-by-googlers/[headless]/issues
 - [Discussion forum]
 
 ## Table of Contents [if the explainer is longer than one printed page]
