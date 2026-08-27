@@ -1,0 +1,16 @@
+RewriteEngine On
+
+# Block common crawlers and scrapers with 403 Forbidden
+RewriteCond %{HTTP_USER_AGENT} (googlebot|bingbot|baiduspider|msnbot|slurp|altavista|alexa|megaindex) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (httrack|wget|blackwidow|custom|download\ demon|express\ webpictures) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (extractorpro|eyenetie|flashget|getright|go!zilla|grabnet|grafula) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (go-ahead-got-it|hmview|image\ stripper|image\ sucker|indy\ library) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (interget|internet\ ninja|jetcar|joc\ web\ spider|larbin|leechftp) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (mass\ downloader|navroad|nearsite|netants|netspider|net\ vampire) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (netzip|octopus|offline\ explorer|offline\ navigator|pagegrabber) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (pavuk|pcbrowser|realdownload|reget|sitesnagger|smartdownload) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (superbot|superhttp|surfbot|takeout|teleport\ pro|voideye) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (web\ image\ collector|web\ sucker|webauto|webcopier|webfetch) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (webgo\ is|webleacher|webreaper|websauger|website\ extractor) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (website\ quester|webstripper|webwhacker|webzip|widow|wwwoffle|zeus) [NC]
+RewriteRule ^ - [F,L]
